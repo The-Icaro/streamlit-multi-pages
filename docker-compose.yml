@@ -1,8 +1,8 @@
 version: "3.4"
 services:
-  cybersecurity-fiap-streamlit:
+  streamlit-multi-pages:
     tty: true
-    image: "eduardomatoss/cybersecurity-fiap-streamlit"
+    image: "The-Icaro/streamlit-multi-pages"
     stdin_open: true
     build:
       context: .

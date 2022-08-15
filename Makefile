@@ -1,5 +1,5 @@
-APP_NAME="cybersecurity-fiap-streamlit"
-IMAGE_NAME="eduardomatoss/cybersecurity-fiap-streamlit"
+APP_NAME="streamlit-multi-pages"
+IMAGE_NAME="The-Icaro/streamlit-multi-pages"
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Linux)
     DOCKER_USER=$(shell id -u $(USER)):$(shell id -g $(USER))
