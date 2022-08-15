@@ -2,7 +2,7 @@ version: "3.4"
 services:
   streamlit-multi-pages:
     tty: true
-    image: "The-Icaro/streamlit-multi-pages"
+    image: "the-icaro/streamlit-multi-pages"
     stdin_open: true
     build:
       context: .
