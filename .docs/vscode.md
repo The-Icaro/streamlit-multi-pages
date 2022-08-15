@@ -13,7 +13,7 @@
             "module": "streamlit",
             "args": [
                 "run",
-                "run.py"
+                "app/main_page.py"
                 ]
         }
     ]
