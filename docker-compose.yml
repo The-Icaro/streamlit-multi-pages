@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  cybersecurity-fiap-streamlit:
+    tty: true
+    image: "eduardomatoss/cybersecurity-fiap-streamlit"
+    stdin_open: true
+    build:
+      context: .
+      target: "development"
+    volumes:
+      - ".:/app"
+    networks:
+      - db_nw
+
+networks:
+  db_nw:
+    driver: bridge
