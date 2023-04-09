@@ -27,7 +27,7 @@ local/shell:
 	pipenv shell
 
 local/run:
-	streamlit run run.py
+	streamlit run app/main_page.py
 
 docker/build:
 	CURRENT_UID=${DOCKER_USER} docker-compose build ${APP_NAME}
@@ -54,7 +54,7 @@ docker/verify:
 	make docker/check-packages
 
 docker/run:
-	CURRENT_UID=${DOCKER_USER} docker-compose run --service-port ${APP_NAME} streamlit run run.py
+	CURRENT_UID=${DOCKER_USER} docker-compose run --service-port ${APP_NAME} streamlit run app/main_page.py
 
 image/build:
 	docker build . --target production -t ${IMAGE_NAME}:${VERSION}
